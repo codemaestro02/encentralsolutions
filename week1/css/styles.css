@@ -19,9 +19,9 @@ html, body{
     font-size: 13px;
 }
 
-.container, .row{
+/* .container{
     margin: 20px 60px;
-}
+} */
 
 /* Heading text */
 .heading{
@@ -50,6 +50,7 @@ button{
     color: #212353;
     background-color: white;
     box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.3);
+    font-size: 13px;
     width: 150px;
     height: 50px;
     border: none;
@@ -68,6 +69,7 @@ button{
     color: #FFFFFF;
     background-color: #9C69E2;
     width: 150px;
+    font-size: 13px;
     height: 50px;
     border: none;
     border-radius: 50px;
@@ -78,6 +80,7 @@ button{
 
 /* Start of the nav-menu */
 .row > nav{
+    margin: 40px 60px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -101,6 +104,10 @@ button{
 
 /* End of nav menu */
 
+/* Main */
+.row > main{
+    margin: 20px 120px;
+}
 
 /* Start of About section */
 
@@ -154,7 +161,8 @@ button{
 /* About card */
 .row > main > .about > .about-card{
     background-color: #F063B826;
-    margin: 90px 50px;
+    margin: 70px 30px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -193,6 +201,10 @@ button{
 
 /* Features Section */
 
+.row > main > .features{
+    width: 100%;
+}
+
 .row > main > .features > .section-heading{
     font-size: 30px;
     margin: 20px;
@@ -207,20 +219,22 @@ button{
 }
 
 .row > main > .features > .cards{
+    /* width: 100%; */
+    justify-content: center;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 350px);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 40px;
-    column-gap: 40px;
+    column-gap: 40px; 
 }
 
 .row > main > .features > .cards > .card{
-    width: 40vw;
-    padding: 30px;
+    width: 350px;
+    padding: 30px 10px 10px 10px;
     display: flex;
     align-items: center;
-    justify-content: left;
-    gap: 40px;
+    justify-content: center;
+    gap: 10px;
 }
 
 .row > main > .features > .cards > .card:nth-child(1) {
@@ -247,14 +261,15 @@ button{
 }
 
 .row > main > .features > .cards > .card > .illustration > img{
-    width: 200px;
+    width: 150px;
 }
 
 .row > main > .features > .cards > .card > .text{
+    width: 150px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    justify-content: space-between;
+    gap: 40px;
+    justify-content: space-around;
 
 }
 
@@ -279,5 +294,100 @@ button{
 
 hr{
     color: #000;
+    /* margin: 0px; */
 }
 
+/* Footer */
+.row > footer{
+    margin: 20px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.row > footer > .title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row > footer > .title > .left > .heading-text{
+    margin: 10px 0;
+    font-size: 30px;
+    color: #212353;
+}
+
+.row > footer > .title > .left > .body-text{
+    margin: 10px 0;
+}
+
+.row > footer > .title > .right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.row > footer > .footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.row > footer > .footer > .company-info,
+.row > footer > .footer > .about,
+.row > footer > .footer > .help,
+.row > footer > .footer > .sm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.row > footer > .footer > .company-info > h5,
+.row > footer > .footer > .about > h5,
+.row > footer > .footer > .help > h5,
+.row > footer > .footer > .sm > h5{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.row > footer > .footer > .company-info > .address{
+    font-weight: 700;
+    color: #212353;
+}
+
+.row > footer > .footer > .company-info > .address, .row > footer > .footer > .company-info > .contact{
+    line-height: 20px;
+}
+
+.row > footer > .footer > .about > .list,
+.row > footer > .footer > .help > .list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.row > footer > .footer > .sm > .list{
+    display: grid;
+    grid-template-columns: repeat(2, 60px);
+    grid-template-rows: repeat(3, 60px);
+}
+
+.row > footer > .bottom{
+    margin: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.row > footer > .bottom > .copyright{
+    line-height: 20px;
+}
+
+.row > footer > .bottom > .support > button{
+    border: none;
+    background: none;
+}
