@@ -335,6 +335,16 @@ button{
     gap: 40px;
 }
 
+.row > main > .testimonials > .box > .owl-carousel > .item .profile-picture{
+    width: 50px;
+    height: 50px;
+}
+
+.row > main > .testimonials > .box > .owl-carousel > .item > .profile-picture > img{
+    width: 50px;
+    height: 50px;
+}
+
 .row > main > .testimonials > .box > .owl-carousel > .item > .item-desc > .info > h3{
     margin: 0 0 10px;
     font-size: 28px;
@@ -386,7 +396,6 @@ button{
 .row > main > .testimonials > .box > .owl-carousel > .owl-stage {
     margin: 15px 0;
     display: flex;
-    display: -webkit-flex;
 }
 
 .row > main > .testimonials > .box > .owl-carousel > .item {
@@ -395,9 +404,7 @@ button{
     width: 320px;
     /* height: 400px; */
     display: flex;
-    display: -webkit-flex;
-    align-items: flex-end;
-    -webkit-align-items: flex-end;
+    align-items: center;
     border-radius: 16px;
     overflow: hidden;
     position: relative;
