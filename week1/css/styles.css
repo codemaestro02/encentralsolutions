@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Sen';
+    src: url('../media/fonts/Sen-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Sen', sans-serif;
+    color: #4B5D68;
+}
+
+.container, .row{
+    margin: 20px 60px;
+}
+
+/* Heading text */
+.heading{
+    font-size: 30px;
+}
+
+/* normal hyperlinked text */
+a{
+    text-decoration: none;
+    color: #4B5D68;
+}
+
+/* when your cursor hover on them */
+a:hover{
+    color: #212353;
+    font-weight: 600;
+}
+
+/* The Request Demo button */
+.request{
+    color: #212353;
+    background-color: white;
+    box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.3);
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Sen', sans-serif;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.learn{
+    color: #FFFFFF;
+    background-color: #9C69E2;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Sen', sans-serif;
+}
+
+
+/* Start of the nav-menu */
+.row > nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+
+}
+
+.row > nav > .left-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.row > nav > .left-nav > .nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* End of nav menu */
+
+
+/* Start of About section */
+
+/* Top Headline */
+.row > main > .about > .headline{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    justify-content: space-around;
+    height: 400px;
+    position: relative;
+    /* margin-right: -50px; */
+}
+
+/* The first illustration */
+.row > main > .about > .headline > .illustration{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.row > main > .about > .headline > .illustration > img{
+    width: 45vw;
+}
+
+/* The first headline */
+.row > main > .about > .headline > .text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* The header text */
+.row > main > .about > .headline > .text > .heading{
+
+    font-size: 70px;
+    color: #212353;
+    width: 50vw;
+
+}
+
+/* Body text */
+.row > main > .about > .headline > .text > .body-text{
+    width: 30vw;
+
+}
+
+/* About card */
+.row > main > .about > .about-card{
+    background-color: #F063B826;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+/* The second illustration */
+.row > main > .about > .about-card > .illustration > img{
+    width: 30vw;
+}
+
+/* The text block */
+.row > main > .about > .about-card > .text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* The text block's heading */
+.row > main > .about > .about-card > .text > .heading{
+    line-height: 40px;
+}
+
+/* The text's block body text */
+.row > main > .about > .about-card > .text > .body-text{
+    line-height: 25px;
+}
+
+/* End of About Section */
+
+
+/* Features Section */
+
+.row > main > .features > .section-heading{
+    font-size: 30px;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.row > main > .features > .section-text{
+    text-align: center;
+    margin: auto;
+    width: 45vw;
+}
+
+.row > main > .features > .cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
