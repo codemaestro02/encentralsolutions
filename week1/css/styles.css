@@ -16,6 +16,7 @@ html, body{
     height: 100%;
     font-family: 'Sen', sans-serif;
     color: #4B5D68;
+    font-size: 13px;
 }
 
 .container, .row{
@@ -37,6 +38,11 @@ a{
 a:hover{
     color: #212353;
     font-weight: 600;
+}
+
+
+button{
+    font-family: 'Sen', sans-serif;
 }
 
 /* The Request Demo button */
@@ -66,6 +72,7 @@ a:hover{
     border: none;
     border-radius: 50px;
     font-family: 'Sen', sans-serif;
+    margin: 20px 0;
 }
 
 
@@ -147,7 +154,7 @@ a:hover{
 /* About card */
 .row > main > .about > .about-card{
     background-color: #F063B826;
-    margin: 50px;
+    margin: 90px 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -195,7 +202,7 @@ a:hover{
 
 .row > main > .features > .section-text{
     text-align: center;
-    margin: auto;
+    margin: 50px auto;
     width: 45vw;
 }
 
@@ -203,4 +210,69 @@ a:hover{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
+.row > main > .features > .cards > .card{
+    width: 40vw;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 40px;
+}
+
+.row > main > .features > .cards > .card:nth-child(1) {
+    background: url(../media/illustrations/feature-card-bg-1.svg) no-repeat;
+    background-size: contain;
+    background-position-x: right;
+}
+.row > main > .features > .cards > .card:nth-child(2) {
+    background: url(../media/illustrations/feature-card-bg-2.svg) no-repeat;
+    background-size: contain;
+    background-position-x: right;
+}
+
+.row > main > .features > .cards > .card:nth-child(3) {
+    background: url(../media/illustrations/feature-card-bg-3.svg) no-repeat;
+    background-size: contain;
+    background-position-x: right;
+}
+
+.row > main > .features > .cards > .card:nth-child(4) {
+    background: url(../media/illustrations/feature-card-bg-4.svg) no-repeat;
+    background-size: contain;
+    background-position-x: right;
+}
+
+.row > main > .features > .cards > .card > .illustration > img{
+    width: 200px;
+}
+
+.row > main > .features > .cards > .card > .text{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+
+}
+
+.row > main > .features > .cards > .card > .text > .heading-text{
+    font-size: 20px;
+}
+
+.row > main > .features > .cards > .card > .text > button{
+    background: none;
+    font-weight: 700;
+    border: none;
+    display: flex;
+    gap: 20px;
+    color: #212353;
+    
+}
+
+
+.testimonials{
+    
 }
