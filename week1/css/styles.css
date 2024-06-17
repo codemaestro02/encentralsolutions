@@ -89,7 +89,8 @@ button{
 .learn:hover{
     color: #9C69E2;
     background-color: #fff;
-    box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.3);
+    font-weight: 700;
+    border: 2px solid #9C69E2;
 
 }
 
