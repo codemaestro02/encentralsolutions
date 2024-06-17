@@ -63,10 +63,19 @@ button{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.request:hover{
+    color: #fff;
+    background-color: #212353;
+    box-shadow: none;
+
 }
 
 .learn{
     color: #FFFFFF;
+    cursor: pointer;
     background-color: #9C69E2;
     width: 150px;
     font-size: 13px;
@@ -75,6 +84,13 @@ button{
     border-radius: 50px;
     font-family: 'Sen', sans-serif;
     margin: 20px 0;
+}
+
+.learn:hover{
+    color: #9C69E2;
+    background-color: #fff;
+    box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.3);
+
 }
 
 
@@ -279,6 +295,7 @@ button{
 
 .row > main > .features > .cards > .card > .text > button{
     background: none;
+    cursor: pointer;
     font-weight: 700;
     border: none;
     display: flex;
@@ -287,10 +304,266 @@ button{
     
 }
 
+/* Start of Testimonials */
 
-.testimonials{
-    margin: 50px 0;
+.row > main > .testimonials > .box{
+    background-color: #9C69E2;
+    padding: 30px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
+
+.row > main > .testimonials > .box > .title{
+    margin-bottom: 48px;
+    padding-bottom: 16px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    position: relative;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.row > main > .testimonials > .box > .owl-carousel > .item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.row > main > .testimonials > .box > .owl-carousel > .item > .item-desc > .info > h3{
+    margin: 0 0 10px;
+    font-size: 28px;
+    line-height: 36px;
+    color: #212353;
+}
+.row > main > .testimonials > .box > .owl-carousel > .item > .item-desc > .info > small{
+    color: #9C69E2;
+}
+
+.row > main > .testimonials > .box > button {
+    outline: none !important;
+}
+/******* Common Element CSS End *********/
+
+/* -------- title style ------- */
+.row > main > .testimonials > .box > .title{
+    position: relative;
+    width: 400px;
+}
+.row > main > .testimonials > .box > .title::before,
+.row > main > .testimonials > .box > .title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    border-radius: 2px;
+}
+.row > main > .testimonials > .box > .title::before {
+    width: 100%;
+    background: #f2f2f2;
+}
+.row > main > .testimonials > .box > .title::after {
+    width: 32px;
+    background: #e73700;
+}
+
+/******* Middle section CSS Start ******/
+/* -------- Landing page ------- */
+.row > main > .testimonials {
+    padding: 60px 50px;
+}
+
+.row > main > .testimonials > .box > .owl-carousel{
+    display: flex;
+}
+
+.row > main > .testimonials > .box > .owl-carousel > .owl-stage {
+    margin: 15px 0;
+    display: flex;
+    display: -webkit-flex;
+}
+
+.row > main > .testimonials > .box > .owl-carousel > .item {
+    background-color: #FFFFFF;
+    margin: 0 15px 60px;
+    width: 320px;
+    /* height: 400px; */
+    display: flex;
+    display: -webkit-flex;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.row > main > .testimonials > .box > .owl-carousel > .item.active {
+    width: 500px;
+    box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+}
+
+.row > main > .testimonials > .box > .owl-carousel > .item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); */
+}
+
+.row > main > .testimonials > .box > .owl-carousel > .item > .item-desc {
+    padding: 0 24px 12px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transform: translateY(calc(100% - 54px));
+    -webkit-transform: translateY(calc(100% - 54px));
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.row > main > .testimonials > .box > .owl-carousel > .item.active > .item-desc {
+    transform: none;
+    -webkit-transform: none;
+}
+
+.row > main > .testimonials > .box > .owl-carousel > .item > .item-desc > p {
+    opacity: 0;
+    -webkit-transform: translateY(32px);
+    transform: translateY(32px);
+    transition: all 0.4s ease-in-out 0.2s;
+    -webkit-transition: all 0.4s ease-in-out 0.2s;
+}
+
+.row > main > .testimonials > .box > .owl-carousel > .item.active > .item-desc > p {
+    opacity: 1;
+    color: #4B5D68;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.row > main > .testimonials > .box > .owl-carousel > .owl-dots {
+    margin-top: -20px;
+    position: relative;
+    z-index: 5;
+}
+/******** Middle section CSS End *******/
+
+/***** responsive css Start ******/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .row > main > .testimonials > .box > .title{
+        margin-bottom: 32px;
+    }
+    .row > main > .testimonials > .box > .owl-carousel > .item > .item-desc > .info > h3 {
+        margin: 0 0 8px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    /* -------- Landing page ------- */
+    .row > main > .testimonials {
+        padding: 50px 30px;
+    }
+    .row > main > .testimonials > .box > .owl-carousel > .item {
+        margin: 0 12px 60px;
+        width: 260px;
+        height: 360px;
+    }
+    .row > main > .testimonials > .box > .owl-carousel > .item.active {
+        width: 400px;
+    }
+    .row > main > .testimonials > .box > .owl-carousel > .item > .item-desc {
+        transform: translateY(calc(100% - 46px));
+        -webkit-transform: translateY(calc(100% - 46px));
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .row > main > .testimonials > .box > .title {
+        margin-bottom: 32px;
+    }
+    .row > main > .testimonials > .box > .owl-carousel > .item > .item-desc > .info > h3 {
+        margin: 0 0 8px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .row > main > .testimonials > .box > .title {
+        width: 330px;
+    }
+
+    /* -------- Landing page ------- */
+    .row > main > .testimonials {
+        padding: 50px 30px 40px;
+    }
+    .row > main > .testimonials > .box > .owl-carousel > .item{
+        margin: 0 12px 60px;
+        width: 240px;
+        height: 330px;
+    }
+    .row > main > .testimonials > .box > .owl-carousel > .item.active {
+        width: 360px;
+    }
+    .row > main > .testimonials > .box > .owl-carousel > .item > .item-desc {
+        transform: translateY(calc(100% - 42px));
+        -webkit-transform: translateY(calc(100% - 42px));
+    }
+}
+
+@media (max-width: 767px) {
+    .row > main > .testimonials{
+        font-size: 14px;
+    }
+    .row > main > .testimonials > .box > .title {
+        margin-bottom: 20px;
+    }
+    .row > main > .testimonials > .box > .owl-carousel > .item > .item-desc > .info > h3{
+        margin: 0 0 8px;
+        font-size: 19px;
+        line-height: 24px;
+    }
+    .row > main > .testimonials > .box > .title{
+        width: 250px;
+    }
+
+    /* -------- Landing page ------- */
+    .row > main > .testimonials {
+        padding: 30px 15px 20px;
+    }
+    .row > main > .testimonials > .box > .owl-carousel > .item {
+        margin: 0 10px 40px;
+        width: 200px;
+        height: 280px;
+    }
+    .row > main > .testimonials > .box > .owl-carousel > .item.active {
+        width: 270px;
+        box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+    }
+    .row > main > .testimonials > .box > .owl-carousel > .item > .item-desc {
+        padding: 0 14px 5px;
+        transform: translateY(calc(100% - 42px));
+        -webkit-transform: translateY(calc(100% - 42px));
+    }
+}
+
+/* End of Testimonials */
+
 
 hr{
     color: #000;
