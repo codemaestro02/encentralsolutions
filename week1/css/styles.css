@@ -274,5 +274,10 @@ button{
 
 
 .testimonials{
-    
+    margin: 50px 0;
 }
+
+hr{
+    color: #000;
+}
+
