@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 	const itemForm = document.getElementById("itemForm");
 	const submitBtn = document.getElementById("submitBtn");
+	const resetBtn = document.getElementById("resetBtn");
 	const dataTable = document
 		.getElementById("dataTable")
 		.getElementsByTagName("tbody")[0];
@@ -29,6 +30,22 @@ document.addEventListener("DOMContentLoaded", () => {
 		itemForm.reset();
 		submitBtn.disabled = true;
 	});
+
+	// Clearing the localStorage Table
+	resetBtn.addEventListener("click", (e) => {
+		e.preventDefault();
+		
+		resetData();
+		loadData();
+
+		itemForm.reset();
+		submitBtn.disabled = true;
+	});
+
+	function resetData(){
+		localStorage.clear();
+
+	}
 
 	function loadData() {
 		const items = JSON.parse(localStorage.getItem("items")) || [];

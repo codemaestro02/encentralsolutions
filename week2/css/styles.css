@@ -66,6 +66,10 @@ button:disabled {
     background-color: #4B5D68;
     cursor: not-allowed;
 }
+
+button#resetBtn{
+    float: inline-end;
+}
   
 table {
     width: 100%;
