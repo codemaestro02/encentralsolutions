@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Sen';
+    src: url('../../week1/media/fonts/Sen-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: "Sen", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+  
+.container {
+    max-width: 600px;
+    color: #4B5D68;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.row{
+    width: 100%;
+}
+  
+h1 {
+    color: #212353;
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+form {
+    margin-bottom: 20px;
+}
+  
+form div {
+    margin-bottom: 10px;
+}
+  
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+  
+button {
+    padding: 10px 15px;
+    background-color: #9C69E2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Sen", sans-serif;
+}
+  
+button:disabled {
+    background-color: #4B5D68;
+    cursor: not-allowed;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+th, td {
+    padding: 10px;
+    border: 1px solid #4B5D68;
+    text-align: left;
+}
+  
+th {
+    background-color: #9C69E2;
+    color: #FFFFFF;
+}
+  
