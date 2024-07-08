@@ -85,7 +85,7 @@ async function fetchCSVAndProcess() {
     catch (error) {
         console.error('Error fetching the CSV file:', error);
     }
-}
+};
 
 function processCSV(csvText) {
     
@@ -117,9 +117,24 @@ return records;
 }
 
 function promptSortingOption() {
-    const option = prompt(`Enter 1 to sort by First Name
+    const readline = require("readline").createInterface({
+        input: process.stdin,
+        output: process.stdout,
+    });
+      
+    readline.question(
+        "Enter 1 to sort by First Name\nEnter 2 to sort by Last Name\nEnter 3 to sort by Age\n",
+        (user_response) => {
+            console.log(user_response)
+            readline.close();
+        }
+    );
+    
+    const option = prompt(
+        `Enter 1 to sort by First Name
         Enter 2 to sort by Last Name
-        Enter 3 to sort by Age`);
+        Enter 3 to sort by Age`
+    );
     return parseInt(option, 10);
 }
 
