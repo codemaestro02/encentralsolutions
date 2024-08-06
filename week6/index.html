@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fomantic UI Elements</title>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.3/semantic.min.css"
+		/>
+		
+	</head>
+	<body>
+		<div class="ui container">
+			<style>
+				.container {
+					margin-top: 100px;
+				}
+			</style>
+			<!-- <div class="elements">
+				<h1 class="ui header">Welcome to Fomantic UI</h1>
+				<button class="ui primary basic button">Click Me</button>
+				<button class="ui secondary tertiary button">Secondary</button>
+				<button class="ui positive button">Positive</button>
+				<button class="ui negative button">Negative</button>
+			</div> -->
+
+			<!-- <div class="collections">
+				<form class="ui form">
+					<div class="field">
+						<label>Name</label>
+						<input type="text" name="name" placeholder="Name" />
+					</div>
+					<button class="ui button" type="submit">Submit</button>
+				</form>
+				<div class="ui grid">
+					<div class="four wide column">Column 1</div>
+					<div class="four wide column">Column 2</div>
+					<div class="four wide column">Column 3</div>
+					<div class="four wide column">Column 4</div>
+				</div>
+			</div> -->
+
+			<!-- <div class="views">
+				<div class="ui card">
+					<div class="image">
+						<img src="https://via.placeholder.com/150" alt="Placeholder" />
+					</div>
+					<div class="content">
+						<a class="header">John Doe</a>
+						<div class="meta">
+							<span class="date">Joined in 2015</span>
+						</div>
+						<div class="description">
+							John is a software engineer living in New York.
+						</div>
+					</div>
+				</div>
+				<div class="ui comments">
+					<div class="comment">
+						<a class="avatar">
+							<img src="https://via.placeholder.com/50" alt="Avatar" />
+						</a>
+						<div class="content">
+							<a class="author">Jane Doe</a>
+							<div class="metadata">
+								<span class="date">Today at 5:42PM</span>
+							</div>
+							<div class="text">This is a great framework!</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+			<div class="modules">
+				<div class="ui dropdown">
+					<input type="hidden" name="dropdown" />
+					<div class="default text">Select an option</div>
+					<div class="menu">
+						<div class="item" data-value="1">Option 1</div>
+						<div class="item" data-value="2">Option 2</div>
+						<div class="item" data-value="3">Option 3</div>
+					</div>
+				</div>
+				<button class="ui button" id="showModal">Show Modal</button>
+				<div class="ui modal">
+					<div class="header">Modal Title</div>
+					<div class="content">
+						<p>This is a modal content.</p>
+					</div>
+					<div class="actions">
+						<div class="ui button">Close</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.3/semantic.min.js"></script>
+		<script>
+			$(".ui.dropdown").dropdown();
+			$("#showModal").click(function () {
+				$(".ui.modal").modal("show");
+			});
+		</script>
+	</body>
+</html>

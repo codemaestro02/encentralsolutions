@@ -1,0 +1,35 @@
+@primary-color: #3998db;
+@padding: 20px;
+
+.nav{
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li{
+        display: inline-block;
+    }
+
+    a{
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.border-radius(@radius){
+    border-radius: @radius;
+}
+
+@base-color: #3498db;
+
+.button{ 
+    .border-radius(5px);
+    background-color: @primary-color;
+    color: lighten(@base-color, 20%);
+    background-color: darken(@base-color, 20%);
+    padding: @padding;
+}

@@ -1,0 +1,52 @@
+$primary-color: #3498db;
+$padding: 20px;
+
+.nav{
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li{
+        display: inline-block;
+    }
+
+    a{
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+
+@mixin border-radius($radius){
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+
+.button{
+    @include border-radius(5px);
+    background-color: $primary-color;
+    padding: $padding;
+}
+
+.message{
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
+
+.success{
+    @extend .message;
+    border-color: green;
+}
+
+.error{
+    @extend .message;
+    border-color: red;
+}

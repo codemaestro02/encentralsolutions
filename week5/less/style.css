@@ -1,0 +1,21 @@
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav li {
+  display: inline-block;
+}
+.nav a {
+  text-decoration: none;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+.button {
+  border-radius: 5px;
+  background-color: #3998db;
+  color: #8bc4ea;
+  background-color: #196090;
+  padding: 20px;
+}
